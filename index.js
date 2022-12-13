@@ -27,7 +27,7 @@ const questions = [
     {
         type: 'list',
         message: 'What kind of license should your project have?',
-        choices: ['MIT', 'APACHE 2.0', 'GPL 3.0', 'BSD 3', 'None'],
+        choices: ['MIT', 'APACHE_2.0', 'GPLv3', 'BSD_3', 'None'],
         name: 'license'
     },
     {
@@ -47,22 +47,24 @@ const questions = [
     },
 ]
 
-// inquirer
-//     .prompt([ ])
+fs.link('https://github.com/' + "username" + '/' + 'title', "hardlinkToFile", (err) => {
+    if (err) console.log(err)
+    else {
+      console.log("\nHard link created\n");
+      console.log("Contents of the hard link created:");
+      console.log(fs.readFileSync('hardlinkToFile', 'utf8'));
+    }
+  });
 
-    .then((response) => {
-        const {username, email, title, description, license, installation, test, usage} = response;
+function writeToFile(fileName, data) {
+    return fs.writeFileSync(path.join(process.cwd(), fileName), data)
+}
 
+function init() {
+    inquirer.prompt(questions).then((response) => {
+        return generateMarkDown({ ...response })
+    }).then((data) => {
+        writeToFile("README.md", data)
     })
-    
-    function writeToFile(fileName, data) {
-        return fs.writeFileSync(path.join(process.cwd(), fileName), data)
-    }
-    
-    function init() {
-        inquirer.prompt(questions).then((response) => {
-            writeToFile("README.md", generateMarkDown({...response}))
-        
-        })
-    }
+}
 init()
