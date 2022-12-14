@@ -1,10 +1,10 @@
 # my-readme-generator
 
-[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
 ## Description 
 
-takes a users input and generates a professional readme from the command line
+From the command line a user is given all of the necessary prompts to write a professional README
 
 ## Table of Content
 
@@ -20,11 +20,11 @@ npm i
 
 ## Usage
 
-Not much
+HERE IS A LINK TO MY VIDEO SUBMISSION https://drive.google.com/file/d/1bPoq-7uvigncGrFf5bX3sJbM58JjeKV3/view
 
 ## License
 
-this application is being covered under APACHE_2.0 license
+this application is being covered under GPLv3 license
 
 ## Test
 
