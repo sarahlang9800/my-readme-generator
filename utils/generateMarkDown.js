@@ -1,10 +1,8 @@
+// Creates a license badge for the users selected badge
 licenses = license => {
     switch (license) {
         case 'MIT':
-            const MIT =
-                '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)'
-
-            return MIT
+            return '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)'
             break;
 
         case 'APACHE_2.0':
@@ -16,10 +14,7 @@ licenses = license => {
             break;
 
         case 'BSD_3':
-            const BSD_3 =
-                '[![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)'
-
-            return BSD_3
+            return '[![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)'
             break;
 
         case 'None':
@@ -47,7 +42,7 @@ function renderLicenseSection(license) {
     } else {
         return `## License
 
-this application is being run on ${license} license`;
+this application is being covered under ${license} license`;
     }
  }
 
@@ -87,9 +82,9 @@ ${data.test}
 
 For any additional questions 
 
-you can reach me @${data.email}
+you can reach me at ${data.email}
 
-or you can see more of my work on GitHub @${data.username}
+or you can see more of my work on GitHub @[${data.username}](https://github.com/${data.username})
 `;
 }
 module.exports = generateMarkDown;

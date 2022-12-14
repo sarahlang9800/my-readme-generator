@@ -4,7 +4,7 @@
 
 ## Description 
 
-bla bla vla
+takes a users input and generates a professional readme from the command line
 
 ## Table of Content
 
@@ -20,11 +20,11 @@ npm i
 
 ## Usage
 
-nothing 
+Not much
 
 ## License
 
-this application is being run on APACHE_2.0 license
+this application is being covered under APACHE_2.0 license
 
 ## Test
 
@@ -34,6 +34,6 @@ npm test
 
 For any additional questions 
 
-you can reach me @langsarah98@yahoo.com
+you can reach me at langsarah98@yahoo.com
 
-or you can see more of my work on GitHub @sarahlang9800
+or you can see more of my work on GitHub @[sarahlang9800](https://github.com/sarahlang9800)

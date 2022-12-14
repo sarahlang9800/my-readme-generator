@@ -47,14 +47,6 @@ const questions = [
     },
 ]
 
-fs.link('https://github.com/' + "username" + '/' + 'title', "hardlinkToFile", (err) => {
-    if (err) console.log(err)
-    else {
-      console.log("\nHard link created\n");
-      console.log("Contents of the hard link created:");
-      console.log(fs.readFileSync('hardlinkToFile', 'utf8'));
-    }
-  });
 
 function writeToFile(fileName, data) {
     return fs.writeFileSync(path.join(process.cwd(), fileName), data)
@@ -67,4 +59,5 @@ function init() {
         writeToFile("README.md", data)
     })
 }
+
 init()
